@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIREM - Meu Perfil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="texto-cabecalho">
+            <h1>Meu Perfil - SIREM</h1>
+            <p>Sistema Repositório de Multiletramento</p>
+        </div>
+        <div class="logo">
+            <img src="Logo_sem_fundo.png" alt="Logo SIREM">
+        </div>
+        <div class="menu">
+            <button onclick="toggleMenu()">☰</button>
+            <div id="menu-opcoes" class="menu-opcoes">
+                <a href="index.html">Início</a>
+                <a href="perfil.html">Meu Perfil</a>
+                <a href="publicacoes.html">Minhas Publicações</a>
+                <a href="#">Sobre</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container-perfil">
+            <h2>MEU PERFIL > NATHAN GIOVANNI PEIXOTO</h2>
+            <div class="perfil">
+                <div class="foto-perfil">
+                    <img id="foto-perfil" src="default-profile.png" alt="Foto de Perfil">
+                    <input type="file" id="upload-foto-perfil" accept="image/*" onchange="carregarImagem(event)">
+                </div>
+                <div class="info-perfil">
+                    <h3>NATHAN GIOVANNI PEIXOTO</h3>
+                    <p>Aluno no IFB desde: <strong>Março/2023</strong></p>
+                    <p>Última atualização de dados: 00/00/0000 - 00:00:00</p>
+                    <ul>
+                        <li>USER ID: 584067986757</li>
+                        <li>DATA DE NASCIMENTO: 08/06/2004</li>
+                        <li>EMAIL: nathan.giovanni.peixoto@uel.br</li>
+                        <li>TELEFONE: (61) 98295-6977</li>
+                        <li>GÊNERO: Masculino</li>
+                    </ul>
+                </div>
+                <button class="botao-alterar">ALTERAR DADOS</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Suporte: suporte@email.com</p>
+        <p>*AS INTERFACES PODEM SOFRER ALTERAÇÕES NO RESULTADO FINAL</p>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

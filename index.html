@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIREM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="texto-cabecalho">
+            <h1>SIREM</h1>
+            <p>Sistema Repositório de Multiletramento</p>
+        </div>
+        <div class="logo">
+            <img src="Logo_sem_fundo.png" alt="Logo SIREM">
+        </div>
+        <div class="menu">
+          <button onclick="toggleMenu()">&#9776;</button>
+          <div id="menu-opcoes" class="menu-opcoes">
+            <a href="#">Início</a>
+            <a href="login.html">Login</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
+          </div>
+        </div>
+    </header>
+    <main>
+      <div class="container-pesquisa">
+        <h2>SIREM Pesquisa</h2>
+        <input
+          type="text"
+          placeholder="Pesquisar por artigos"
+          id="inputPesquisa"
+      </div>
+        <div class="filtros">
+          <span class="filtro-titulo">Filtros:</span>
+          <a href="#" class="ativo">Artigos</a>
+          <a href="#">Vídeos</a>
+          <a href="#">Referências</a>
+          <a href="#">Resenhas</a>
+        </div>
+      </div>
+      <div class="destaque">
+        <span class="destaque-titulo">Obra do dia:</span>
+        <a href="#">Lorem Ipsum - Lorem</a>
+      </div>
+    </main>
+    <footer>
+      <p>Suporte: suporte@email.com</p>
+      <p>*AS INTERFACES PODEM SOFRER ALTERAÇÕES NO RESULTADO FINAL</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIREM Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="texto-cabecalho">
+        <h1>Login - SIREM</h1>
+        <p>Sistema Repositório de Multiletramento</p>
+      </div>
+      <div class="logo">
+        <img src="Logo_sem_fundo.png" alt="Logo SIREM" />
+      </div>
+      <div class="menu">
+        <button onclick="toggleMenu()">&#9776;</button>
+        <div id="menu-opcoes" class="menu-opcoes">
+          <a href="index.html">Início</a>
+          <a href="#">Sobre</a>
+          <a href="#">Contato</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="fundo-login">
+        <div class="formulario-login">
+          <h2>SIREM Login</h2>
+          <form id="login-form">
+            <div class="tipo-acesso">
+              <label><input type="radio" name="acesso" onclick="mostrarFormulario('login')" checked /> Login</label>
+              <label><input type="radio" name="acesso" onclick="mostrarFormulario('cadastro')" /> Cadastro</label>
+            </div>
+            <div class="campo-formulario">
+              <label for="email">Endereço de E-mail</label>
+              <input type="email" id="email" placeholder="email@email.com" required />
+            </div>
+            <div class="campo-formulario">
+              <label for="senha">Senha</label>
+              <input type="password" id="senha" placeholder="************" required />
+            </div>
+            <div class="esqueci-senha">
+              <a href="#">Esqueci a senha</a>
+            </div>
+            <div class="botoes">
+              <button type="submit" class="botao-login">LOGIN</button>
+              <button type="button" class="botao-cancelar" onclick="limparFormulario()">CANCELAR</button>
+            </div>
+          </form>
+
+          <form id="cadastro-form" style="display: none;">
+            <div class="tipo-acesso">
+              <label><input type="radio" name="acesso" onclick="mostrarFormulario('login')" /> Login</label>
+              <label><input type="radio" name="acesso" onclick="mostrarFormulario('cadastro')" checked /> Cadastro</label>
+            </div>
+            <div class="campo-formulario">
+              <label for="nome">Nome Completo</label>
+              <input type="text" id="nome" placeholder="Nome Completo" required />
+            </div>
+            <div class="campo-formulario">
+              <label for="cpf">CPF</label>
+              <input type="text" id="cpf" placeholder="000.000.000-00" required />
+            </div>
+            <div class="campo-formulario">
+              <label for="email-cadastro">Endereço de E-mail</label>
+              <input type="email" id="email-cadastro" placeholder="email@email.com" required />
+            </div>
+            <div class="campo-formulario">
+              <label for="senha-cadastro">Senha</label>
+              <input type="password" id="senha-cadastro" placeholder="************" required />
+            </div>
+            <div class="campo-formulario">
+              <label for="confirmar-senha">Confirmar Senha</label>
+              <input type="password" id="confirmar-senha" placeholder="************" required/>
+            </div>
+            <div class="botoes">
+              <button type="submit" class="botao-cadastrar">CADASTRAR</button>
+              <button type="button" class="botao-cancelar" onclick="limparFormulario()">CANCELAR</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Suporte: suporte@email.com</p>
+      <p>*AS INTERFACES PODEM SOFRER ALTERAÇÕES NO RESULTADO FINAL</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
